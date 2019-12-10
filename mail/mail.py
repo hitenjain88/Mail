@@ -1,9 +1,9 @@
-import email,imaplib
+import email,imaplib,getpass
 
 
 def get_credentials():
     username=input('Enter the Username : ')
-    password=input('Enter the Password : ')
+    password=getpass.getpass('Enter the Password : ')
     return [username,password]
 
 
